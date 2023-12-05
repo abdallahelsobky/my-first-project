@@ -14,7 +14,7 @@ jobs:
         run: docker login --username abdallahelsobky --password ${{ secrets.DOCKER_TOKEN }}
 
       - name: "Building Docker image"
-        run: docker build -t abdallahelsobky/myimage .
+        run: docker build -t abdallahelsobky/task2os.
 
       - name: "Pushing to Docker Hub"
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/myimage
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/task2os
